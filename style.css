@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.portfolio{
+    height: 100vh;
+    width: 100vw;
+    background: skyblue;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+.logo::first-letter{
+    font-size: 40px;
+    border: 2px solid #222;
+    border-right: transparent;
+    padding-left: 5px;
+    color: darkred;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+nav ul li a{
+    position: relative;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: darkred;
+}
+nav ul li a::after{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: darkred;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: darkred;
+    padding: 10px 30px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    border: 2px solid darkred;    
+}
+.btn:hover{
+    background: transparent;
+    color: #333;
+    
+}
+.detail{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+.detail h1{
+    color:#333;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+
+}
+        
+.detail h1 span{
+    color: darkred;
+
+} 
+.detail p{
+    color: #333;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+
+}
+.image{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 145px;
+    right: 80px;
+}
+.image img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 500px;
+}
+.detail{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+#about{
+    padding: 100px;
+    text-align: left;
+    background: #f4f4f4;
+}
+#about h2{
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#about h3{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#about p{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+#about p strong{
+    color: darkred;
+}
+#about p em{
+    color: darkred;
+    font-style: normal;
+}
+#about ul{
+    list-style: disc;
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    padding-left: 20px;
+}
+#about ul li{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+#about ul li strong{
+    color: darkred;
+}
+#about ul li em{
+    color: darkred;
+    font-style: normal;
+}
+#about .btn{
+    display: block;
+    margin: 30px auto 0 auto;
+}
+#services{
+    padding: 100px;
+    text-align: center;
+}
+#services h2{
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+#services .service-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+#services .service{
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#services .service h3{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+#services .service p{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+#services .service p strong{
+    color: darkred;
+}
+#services .service p em{
+    color: darkred;
+    font-style: normal;
+}
+#contact{
+    padding: 100px;
+    text-align: center;
+    background: #f4f4f4;
+}
+#contact h2{
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+#contact p{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+#contact p strong{
+    color: darkred;
+}
+#contact p em{
+    color: darkred;
+    font-style: normal;
+}
+#contact .btn{
+    display: inline-block;
+    margin-top: 20px;
+}
+#about p{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+#about p strong{
+    color: darkred;
+}
+#about p em{
+    color: darkred;
+    font-style: normal;
+}
+#about ul{
+    list-style: disc;
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    padding-left: 20px;
+}
+#about ul li{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+#about ul li strong{
+    color: darkred;
+}
+#about ul li em{
+    color: darkred;
+    font-style: normal;
+}
+
+/* ===== Section Layout ===== */
+section{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+/* ===== Section Titles ===== */
+section h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0a6fd6;
+    border-left: 6px solid #0a6fd6;
+    padding-left: 10px;
+}
+
+/* ===== About Me Section ===== */
+#about p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.skills-list, .services-list{
+    margin-top: 15px;
+}
+.skills-list li
+ .services-list li{
+    list-style: none;
+    padding: 8px 0;
+    font-size: 18px;
+}
+
+.skills li ul{
+    list-style-type: square;
+    margin-left: 20px;
+}
+.services ul li{
+    margin-bottom: 8px;
+    
+}
+
+/* ===== Project Section ===== */
+.project-card{
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-card h3{
+    color: #0a6fd6;
+    margin-bottom: 10px;
+}
+.project-card a {
+    color: #0a6fd6;
+    margin-bottom: 10px;
+    text-decoration: none;
+    background: #0a6fd6;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.project-card a:hover {
+    background: #084c9e;
+}
+
+/* ===== Contact Form =====*/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input, form textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+form button {
+    width: 200px;
+    padding: 12px;
+    background: #0a6fd6;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #004a99;
+}
+
+/* ===== Social Media Icons =====*/
+.social-links {
+    margin-top: 28px;
+}
+
+.social-links a {
+    font-size: 28px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0a6fd6;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #004a99;
+    transform: scale(1.2);
+}
+
+.social-icons-container {
+    text-align: center;
+    margin-top: 30px;
+}
+.social-icons-container h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.social-icons-container .social-links a {
+    font-size: 32px;
+    margin: 0 15px;
+    color: #333;
+}
+.social-icons-container .social-links a:hover {
+    color: darkred;
+}
+.social-icons-container {
+    display: flex;             
+    justify-content: center;  
+    align-items: center;      
+    gap: 20px;                
+    padding: 20px  0;         
+    flex-wrap: wrap;          
+}
+.social-icons-container a {
+    font-size: 40px;           
+    color: #333;             
+    transition: all 0.3s ease; 
+}
+.social-icons-container a:hover {
+    transform: scale(1.2);
+}
+/* Force font family */
+.social-icons-container i {
+    font-family: "Font Awesome 6 Brands" !important;  /* Critical for brands */
+}
+
+/* Brand colors (optional) */
+.fa-facebook-f { color: #1877f2;}
+.fa-twitter { color: #333;}
+.fa-github { color: #333;}
+.fa-linkedin-in { color: #0077b5;}
+.fa-whatsapp { color: #25d366;}
+.social-icons-container i {
+  font-size: 40px;           
+}
+
+
+.social-icons-container i {
+  font-family: "Font Awesome 6 Brands", "Font Awesome 6 Free" !important;  /* Critical for brands */
+  font-weight: 400;  /* Or 900 for solid styles if mixing */
+}
+
+/* For solid icons (if you use any fas) */
+.fas {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+
+/* Optional: Brand colors */
+.social-icons-container a.facebook:hover {
+    color: #3b5998; /* Facebook blue */
+}
+.social-icons-container a.twitter:hover {
+    color: #1da1f2; /* Twitter black */
+}
+.social-icons-container a.github:hover {
+    color: #333; /* GitHub black */
+}
+.social-icons-container a.linkedin:hover {
+    color: #0077b5; /* LinkedIn blue */
+}
+.social-icons-container a.whatsapp:hover {
+    color: #25d366; /* WhatsApp green */
+}
+.social-icons-container a:hover {
+    transform: scale(1.2); /* Slightly decrease on hover */
+}
+/* Responsive Design */
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+    }
+    .image{
+        position: static;
+        width: 50%;
+        height: auto;
+        margin: 20px auto 0 auto;
+    }
+    .detail{
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+/* End of CSS */
+
+
+
+
